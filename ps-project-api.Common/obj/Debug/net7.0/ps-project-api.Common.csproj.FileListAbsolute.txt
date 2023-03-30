@@ -1,0 +1,12 @@
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Common\bin\Debug\net7.0\ps-project-api.Common.deps.json
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Common\bin\Debug\net7.0\ps-project-api.Common.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Common\bin\Debug\net7.0\ps-project-api.Common.pdb
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Common\obj\Debug\net7.0\ps-project-api.Common.csproj.AssemblyReference.cache
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Common\obj\Debug\net7.0\ps-project-api.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Common\obj\Debug\net7.0\ps-project-api.Common.AssemblyInfoInputs.cache
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Common\obj\Debug\net7.0\ps-project-api.Common.AssemblyInfo.cs
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Common\obj\Debug\net7.0\ps-project-api.Common.csproj.CoreCompileInputs.cache
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Common\obj\Debug\net7.0\ps-project-api.Common.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Common\obj\Debug\net7.0\refint\ps-project-api.Common.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Common\obj\Debug\net7.0\ps-project-api.Common.pdb
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Common\obj\Debug\net7.0\ref\ps-project-api.Common.dll

@@ -1,0 +1,17 @@
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\bin\Release\net7.0\ps-project-api.Business.deps.json
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\bin\Release\net7.0\ps-project-api.Business.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\bin\Release\net7.0\ps-project-api.Business.pdb
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\bin\Release\net7.0\ps-project-api.Common.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\bin\Release\net7.0\ps-project-api.DAL.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\bin\Release\net7.0\ps-project-api.Common.pdb
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\bin\Release\net7.0\ps-project-api.DAL.pdb
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\obj\Release\net7.0\ps-project-api.Business.csproj.AssemblyReference.cache
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\obj\Release\net7.0\ps-project-api.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\obj\Release\net7.0\ps-project-api.Business.AssemblyInfoInputs.cache
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\obj\Release\net7.0\ps-project-api.Business.AssemblyInfo.cs
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\obj\Release\net7.0\ps-project-api.Business.csproj.CoreCompileInputs.cache
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\obj\Release\net7.0\ps-project-api.Business.csproj.CopyComplete
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\obj\Release\net7.0\ps-project-api.Business.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\obj\Release\net7.0\refint\ps-project-api.Business.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\obj\Release\net7.0\ps-project-api.Business.pdb
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.Business\obj\Release\net7.0\ref\ps-project-api.Business.dll

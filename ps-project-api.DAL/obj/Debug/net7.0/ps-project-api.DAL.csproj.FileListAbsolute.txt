@@ -1,0 +1,14 @@
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\bin\Debug\net7.0\ps-project-api.DAL.deps.json
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\bin\Debug\net7.0\ps-project-api.DAL.runtimeconfig.json
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\bin\Debug\net7.0\ps-project-api.DAL.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\bin\Debug\net7.0\ps-project-api.DAL.pdb
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\obj\Debug\net7.0\ps-project-api.DAL.csproj.AssemblyReference.cache
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\obj\Debug\net7.0\ps-project-api.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\obj\Debug\net7.0\ps-project-api.DAL.AssemblyInfoInputs.cache
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\obj\Debug\net7.0\ps-project-api.DAL.AssemblyInfo.cs
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\obj\Debug\net7.0\ps-project-api.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\obj\Debug\net7.0\ps-project-api.DAL.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\obj\Debug\net7.0\refint\ps-project-api.DAL.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\obj\Debug\net7.0\ps-project-api.DAL.pdb
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\obj\Debug\net7.0\ps-project-api.DAL.genruntimeconfig.cache
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api.DAL\obj\Debug\net7.0\ref\ps-project-api.DAL.dll
