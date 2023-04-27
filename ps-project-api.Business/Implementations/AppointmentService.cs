@@ -78,6 +78,18 @@ namespace ps_project_api.Business.Implementations
                 .ToList();
         }
 
+        public IEnumerable<Appointment> GetPaginatedAppointments(int pageNumber, int pageSize, Guid doctorId)
+        {
+            return _dbContext.Set<Appointment>()
+                .Include(d => d.Doctor)
+                .Include(d => d.Donor)
+                .Include(d => d.TransfusionCenter)
+                .Where(d => d.DoctorId == doctorId)
+                .Skip(pageNumber * pageSize)
+                .Take(pageSize)
+                .ToList();
+        }
+
         public IEnumerable<Appointment> GetDonorAppointments(Guid donorId)
         {
             return _dbContext.Set<Appointment>()
@@ -86,6 +98,13 @@ namespace ps_project_api.Business.Implementations
                 .Include(d => d.TransfusionCenter)
                 .Where(a => a.DonorId == donorId)
                 .ToList();
+        }
+
+        public long GetAppointmentsCount(Guid doctorId)
+        {
+            return _dbContext.Set<Appointment>()
+                .Where(d => d.DoctorId == doctorId)
+                .LongCount();
         }
     }
 }

@@ -13,5 +13,7 @@ namespace ps_project_api.Business.Interfaces
         IEnumerable<Appointment> GetDoctorAppointments(Guid doctorId);
         Appointment BookAppointment(Appointment appointment);
         Appointment ChangeAppointmentStatus(Guid appointmentId, int status);
+        IEnumerable<Appointment> GetPaginatedAppointments(int pageNumber, int pageSize, Guid doctorId);
+        long GetAppointmentsCount(Guid doctorId);
     }
 }

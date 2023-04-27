@@ -37,6 +37,20 @@ namespace ps_project_api.Controllers
             return Ok(_mapper.Map<IEnumerable<AppointmentViewDTO>>(appointments));
         }
 
+        [HttpGet("doctor/{page}/{pageSize}/{id}")]
+        public IActionResult GetPaginatedDoctorAppointments(int page, int pageSize, Guid id)
+        {
+            var appointments = _appointmentService.GetPaginatedAppointments(page, pageSize, id);
+
+            return Ok(_mapper.Map<IEnumerable<AppointmentViewDTO>>(appointments));
+        }
+
+        [HttpGet("doctor/count/{id}")]
+        public IActionResult GetAppointmentsCount(Guid id)
+        {
+            return Ok(_appointmentService.GetAppointmentsCount(id));
+        }
+
         [HttpPost]
         public IActionResult BookAppointment(AppointmentCreateDTO model)
         {
