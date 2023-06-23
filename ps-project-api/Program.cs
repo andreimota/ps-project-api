@@ -8,6 +8,9 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication;
 using ps_project_api.Common.Implementations;
 using ps_project_api.Common.Interfaces;
+using Hangfire;
+using ps_project_api.Business.Jobs.Interfaces;
+using ps_project_api.Business.Jobs.Implementations;
 
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
@@ -48,6 +51,13 @@ builder.Services.AddDbContext<TransfusionCenterContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Database"))
 );
 
+builder.Services.AddHangfire(config =>
+{
+    config.UseSqlServerStorage(builder.Configuration.GetConnectionString("Database"));
+});
+builder.Services.AddHangfireServer();
+
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: MyAllowSpecificOrigins,
@@ -58,6 +68,9 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddSingleton<IAuthService, AuthService>();
+builder.Services.AddScoped<IEmailSender, EmailSender>();
+
+builder.Services.AddScoped<IRecurringMessageJob, RecurringMessageJob>();
 
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IDoctorService, DoctorService>();
@@ -65,8 +78,8 @@ builder.Services.AddScoped<IDonorService, DonorService>();
 builder.Services.AddScoped<ITransfusionCenterService, TransfusionCenterService>();
 builder.Services.AddScoped<IAppointmentService, AppointmentService>();
 
-
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -85,5 +98,10 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapHangfireDashboard();
+
+app.UseHangfireDashboard();
+
+RecurringJob.AddOrUpdate<IRecurringMessageJob>("xyz123", x => x.SendAppointmentReminders(), "0 19 ? * * *");
 
 app.Run();

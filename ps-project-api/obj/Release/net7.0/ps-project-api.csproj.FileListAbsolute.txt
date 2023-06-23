@@ -90,3 +90,5 @@ C:\Users\Andrei\Desktop\ps-project-api\ps-project-api\obj\Release\net7.0\refint\
 C:\Users\Andrei\Desktop\ps-project-api\ps-project-api\obj\Release\net7.0\ps-project-api.pdb
 C:\Users\Andrei\Desktop\ps-project-api\ps-project-api\obj\Release\net7.0\ps-project-api.genruntimeconfig.cache
 C:\Users\Andrei\Desktop\ps-project-api\ps-project-api\obj\Release\net7.0\ref\ps-project-api.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api\bin\Release\net7.0\SendGrid.dll
+C:\Users\Andrei\Desktop\ps-project-api\ps-project-api\bin\Release\net7.0\StarkbankEcdsa.dll

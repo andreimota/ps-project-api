@@ -1,8 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using ps_project_api.Business.Interfaces;
+using ps_project_api.Common.Implementations;
+using ps_project_api.Common.Interfaces;
 using ps_project_api.DAL;
 using ps_project_api.DAL.Entities;
 using ps_project_api.DAL.Enums;
+using SendGrid.Helpers.Mail;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,14 +18,21 @@ namespace ps_project_api.Business.Implementations
     public class AppointmentService : IAppointmentService
     {
         private readonly TransfusionCenterContext _dbContext;
+        private readonly IEmailSender _emailSender;
 
-        public AppointmentService(TransfusionCenterContext dbContext)
+        public AppointmentService(TransfusionCenterContext dbContext, IEmailSender emailSender)
         {
             _dbContext = dbContext;
+            _emailSender = emailSender;
         }
 
-        public Appointment BookAppointment(Appointment appointment)
+        public async Task<Appointment> BookAppointment(Appointment appointment)
         {
+            var donor = _dbContext.Set<Donor>()
+                .Include(u => u.User)
+                .Where(d => d.Id == appointment.DonorId)
+                .FirstOrDefault();
+
             var doctor = _dbContext.Set<Doctor>()
                 .Include(d => d.Appointments)
                 .Where(d => d.TransfusionCenterId == appointment.TransfusionCenterId)
@@ -49,6 +60,8 @@ namespace ps_project_api.Business.Implementations
             _dbContext.Add(appointment);
 
             _dbContext.SaveChanges();
+
+            _emailSender.SendAppointmentConfirmationEmail(donor.User.Email, donor.FirstName + " " + donor.LastName, appointment.Date.ToShortDateString());
 
             return appointment;
         }

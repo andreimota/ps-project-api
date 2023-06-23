@@ -52,11 +52,11 @@ namespace ps_project_api.Controllers
         }
 
         [HttpPost]
-        public IActionResult BookAppointment(AppointmentCreateDTO model)
+        public async Task<IActionResult> BookAppointment(AppointmentCreateDTO model)
         {
             var appointment = _mapper.Map<Appointment>(model);
 
-            var response = _appointmentService.BookAppointment(appointment);
+            var response = await _appointmentService.BookAppointment(appointment);
 
             return Ok(response);
         }
